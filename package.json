@@ -2,10 +2,10 @@
   "name": "teamwork",
   "version": "1.0.0",
   "description": "Company internal social network for collaboration and team bonding",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "moncha",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
