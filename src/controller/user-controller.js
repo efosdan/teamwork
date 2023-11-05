@@ -6,7 +6,7 @@ const jwtTokens = require('../utils/jwt-helpers');
 
 
 
-const getUser = async (req, res) => {
+const getAllUserHandler = async (req, res) => {
     try {
         client.query(`Select * from users`, (err, result)=>{
             if(!err){
@@ -47,5 +47,5 @@ const loginHandler = async (req, res) => {
 }
 
 
-module.exports = {getUser, registerHandler, loginHandler} ;
+module.exports = {getAllUserHandler, registerHandler, loginHandler} ;
 
