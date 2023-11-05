@@ -2,7 +2,7 @@ const express = require('express');
 const userRouter = express.Router(); 
 const userController = require('../controller/user-controller.js');
 const authorizationPass = require('../middleware/authorization.js');
-const { validateSignupData, validateLoginData } = require('../middleware/validate.js');
+const { validateSignupData, validateLoginData } = require('../middleware/validate-user-data.js');
 const { getAllUserHandler,  registerHandler, loginHandler } = userController;
 
 
